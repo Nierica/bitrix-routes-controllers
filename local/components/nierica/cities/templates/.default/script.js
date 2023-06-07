@@ -20,7 +20,6 @@ $(document).ready(function () {
             type: "POST",
             data: $(this).serialize(),
             success: function (data) {
-                console.log(data);
                 $('.post-city-res').html(data.data);
             },
             error: function(data) { console.log(data); }
